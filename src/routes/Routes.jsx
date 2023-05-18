@@ -6,6 +6,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Blog from "../pages/Blog";
 import Errorpage from "../pages/Errorpage";
+import ToyDetails from "../pages/ToyDetails";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,12 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
+            },
+
+            {
+                path: "/toy-details/:id",
+                element: <ToyDetails />,
+                loader: ({ params }) => fetch(`https://whisk-and-play-server-rownokzahan.vercel.app/toys/${params.id}`)
             },
 
             {

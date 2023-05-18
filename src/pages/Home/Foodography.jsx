@@ -20,7 +20,6 @@ const Foodography = () => {
 
     function PrevArrow(props) {
         const { onClick } = props;
-        console.log(props);
         return (
             <div onClick={onClick}>
                 <BsArrowLeftCircle className="text-primary hover:text-secondary text-4xl -left-1 md:-left-4 top-1/2 -translate-y-1/2 absolute z-20"/>
@@ -30,7 +29,6 @@ const Foodography = () => {
 
     function NextArrow(props) {
         const { onClick } = props;
-        console.log(props);
         return (
             <div onClick={onClick}>
                 <BsArrowRightCircle className="text-primary hover:text-secondary text-4xl -right-1 md:-right-4 top-1/2 -translate-y-1/2 absolute z-20" />
@@ -75,8 +73,8 @@ const Foodography = () => {
     };
 
     return (
-        <div className="my-24">
-            <h3 className="text-dark-gray text-3xl text-center font-bold mb-12">Playful Foodography</h3>
+        <div className="my-28">
+            <h3 className="text-dark-gray font-josefin text-3xl text-center font-bold mb-12">Playful Foodography</h3>
 
             <Slider {...settings}>
                 {imgNumbers.map(num => <div key={num} className="rounded-xl w-64 h-60 overflow-hidden px-3">

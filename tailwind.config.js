@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'josefin': "'Josefin Sans', sans-serif"
+      },
       colors: {
         'primary': "#F6B4C2",
         'secondary': "#ECC6CB",

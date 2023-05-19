@@ -49,6 +49,7 @@ const router = createBrowserRouter([
             {
                 path: "/my-toys/edit/:id",
                 element: <PrivateRoute><EditToy /></PrivateRoute>,
+                loader: ({params}) => fetch(`https://whisk-and-play-server-rownokzahan.vercel.app/toys/${params.id}`)
             },
             
             {

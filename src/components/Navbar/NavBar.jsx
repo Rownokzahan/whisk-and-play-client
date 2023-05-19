@@ -63,7 +63,7 @@ const NavBar = () => {
                 </div>
             </div>
 
-            <div className={`absolute z-20 bg-white md:hidden w-11/12 shadow rounded-ss-2xl rounded-ee-2xl border duration-150 ${showMenu ? "opacity-100 top-24" : "opacity-0 top-7"}`}>
+            <div className={`absolute z-20 bg-white md:hidden w-11/12 shadow rounded-ss-2xl rounded-ee-2xl border duration-300 ${showMenu ? "opacity-100 top-24" : " -top-72"}`}>
                 <div className="relative flex flex-col gap-4 p-6">
                     {navItems}
                     <button onClick={() => setShowMenu(false)}><HiOutlineXMark className="absolute top-2 right-2 text-2xl text-gray-700" /></button>

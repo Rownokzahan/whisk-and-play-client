@@ -31,7 +31,7 @@ const Toys = () => {
                 <button
                     onClick={() => setActiveCategory("Food Prep Tools")}
                     className={`p-3 md:px-8 lg:px-12 rounded-lg ${activeCategory ==="Food Prep Tools" ? "bg-white text-primary shadow-md" :""}`}>
-                    Utensils
+                    Food Prep
                 </button>
             </div>
 

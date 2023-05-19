@@ -15,8 +15,8 @@ const AllToys = () => {
 
     return (
         <div className="my-12">
-            <div className="relative mb-6">
-                <div className="absolute inset-y-0 right-72 flex items-center pl-3 pointer-events-none">
+            <div className="relative mb-6 w-max ml-auto">
+                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd"></path></svg>
                 </div>
                 <input onChange={(e)=>handleSearch(e.target.value)} type="text" id="table-search-users" className="ml-auto block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50" placeholder="Search for toys"/>
@@ -28,6 +28,9 @@ const AllToys = () => {
                         <tr>
                             <th scope="col" className="p-6">
                                 Sl
+                            </th>
+                            <th scope="col" className="p-6">
+                                Toy Image
                             </th>
                             <th scope="col" className="p-6">
                                 Toy Name
@@ -55,6 +58,9 @@ const AllToys = () => {
                         {toys?.map((toy,index) => <tr key={toy?._id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 {index+1}
+                            </th>
+                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <img src={toy?.imageURL} className="w-12 rounded-md" alt="" />
                             </th>
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                 {toy?.ToyName}

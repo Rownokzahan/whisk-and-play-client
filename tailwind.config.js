@@ -10,8 +10,8 @@ export default {
         'josefin': "'Josefin Sans', sans-serif"
       },
       colors: {
-        'primary': "#F6B4C2",
-        'secondary': "#ECC6CB",
+        'primary': "#ff6899",
+        'secondary': "#F6B4C2",
         'dark-gray': "#110C0D",
       },
     },

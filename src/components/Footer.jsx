@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex gap-8 justify-between text-gray-400 items-center">
                 <div className="md:w-1/3 space-y-3">
                     <img src={logo} className="w-24" alt="" />
-                    <p className="font-josefin ">Empower your little chefs. Ignite their passion with engaging culinary toys</p>
+                    <p className="font-josefin ">Empower your little chefs with Whisk & Play. Ignite their passion with engaging culinary toys</p>
                 </div>
 
                 <div className="flex flex-col space-y-4">

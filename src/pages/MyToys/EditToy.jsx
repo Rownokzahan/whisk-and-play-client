@@ -1,7 +1,11 @@
 import { toast } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
+import useTitle from "../../hooks/UseTitle";
 
 const EditToy = () => {
+
+    useTitle("Edit Toy");
+
     const {
         _id,
         sellerName,

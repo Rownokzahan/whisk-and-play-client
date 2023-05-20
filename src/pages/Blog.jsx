@@ -1,5 +1,9 @@
+import useTitle from "../hooks/UseTitle";
 
 const Blog = () => {
+
+    useTitle("Blog");
+
     return (
         <div className="space-y-8 mt-12 mb-24 text-dark-gray text-justify">
             <div>

@@ -5,9 +5,11 @@ import { CiEdit } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
+import useTitle from "../../hooks/UseTitle";
 
 const MyToys = () => {
 
+    useTitle("My Toys");
     const { user } = useContext(AuthContext);
     const [toys, setToys] = useState([]);
     const [control, setControl] = useState(true);

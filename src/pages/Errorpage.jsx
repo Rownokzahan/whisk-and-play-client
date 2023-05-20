@@ -1,9 +1,11 @@
 import { Link, useRouteError } from 'react-router-dom';
 import img1 from '../assets/error.png';
 import img2 from '../assets/error2.png';
+import useTitle from '../hooks/UseTitle';
 
 const ErrorPage = () => {
 
+    useTitle("Error");
     const { error } = useRouteError();
     const errorMessage = error?.message || "Oops! We couldn't find the page you were looking for. Please check the URL and try again.";
 

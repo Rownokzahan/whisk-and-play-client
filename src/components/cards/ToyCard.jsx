@@ -15,7 +15,7 @@ const ToyCard = ({ toy }) => {
                     <Rating className="mt-2" style={{ maxWidth: 80 }} value={ratings} readOnly />
                 </div>
                 <div className="flex justify-between items-center absolute bottom-4 left-2 right-2">
-                    <p>{price}</p>
+                    <p>${price}</p>
                     <Link to={`toy-details/${_id}`} className="text-primary hover:underline duration-100 whitespace-nowrap">View Details</Link>
                 </div>
             </div>

@@ -14,7 +14,7 @@ const AddToy = () => {
         const ToyName = form.ToyName.value;
         const imageURL = form.imageURL.value;
         const category = form.category.value;
-        const price = "$" + form.price.value;
+        const price = form.price.value;
         const ratings = form.ratings.value;
         const availableQuantity = form.availableQuantity.value;
         const description = form.description.value;

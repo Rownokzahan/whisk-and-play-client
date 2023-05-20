@@ -8,8 +8,8 @@ import { FiSend } from "react-icons/fi";
 const Footer = () => {
     return (
         <div className="pt-12 bg-dark-gray" style={{ boxShadow: "0 0 0 100vmax #110C0D", clipPath: "inset(0-100vmax)" }}>
-            <div className="flex gap-8 justify-between text-gray-400 items-center">
-                <div className="md:w-1/3 space-y-3">
+            <div className="flex flex-wrap gap-8 justify-between text-gray-400 items-center">
+                <div className="lg:w-1/3 space-y-3">
                     <img src={logo} className="w-24" alt="" />
                     <p className="font-josefin ">Empower your little chefs with Whisk & Play. Ignite their passion with engaging culinary toys</p>
                 </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className="relative text-gray-300">
                         <h4 className="text-2xl font-josefin mb-1">Newsletter</h4>
                         <input className="bg-transparent border-b focus:outline-0 pl-2 pr-6 py-1 text-lg" type="email" name="email" placeholder="Your Email" />
-                        <button><FiSend className="text-primary absolute right-2 bottom-2 text-2xl" /></button>
+                        <button><FiSend className="text-primary absolute left-52 bottom-2 text-2xl" /></button>
                     </div>
                 </div>
 

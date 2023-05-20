@@ -16,7 +16,8 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const Foodography = () => {
 
-    const imgNumbers = [...Array(10).keys()];
+    const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+
 
     function PrevArrow(props) {
         const { onClick } = props;
@@ -77,8 +78,8 @@ const Foodography = () => {
             <h3 className="text-dark-gray font-josefin text-3xl text-center font-bold mb-12">Playful Foodography</h3>
 
             <Slider {...settings}>
-                {imgNumbers.map(num => <div key={num} className="rounded-xl w-64 h-60 overflow-hidden px-3">
-                    <img className="rounded-xl h-full w-full object-cover ease-in duration-500 hover:scale-105" src={eval(`img${num + 1}`)} alt="" />
+                {images.map((image, index) => <div key={index} className="rounded-xl w-64 h-60 overflow-hidden px-3">
+                    <img className="rounded-xl h-full w-full object-cover ease-in duration-500 hover:scale-105" src={image} alt="" />
                 </div>
                 )}
             </Slider>

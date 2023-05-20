@@ -1,5 +1,7 @@
 import Banner from "./Banner";
+import ChooseUs from "./ChooseUs";
 import Foodography from "./Foodography";
+import OurBrands from "./OurBrands";
 import Toys from "./Toys";
 
 const Home = () => {
@@ -8,6 +10,8 @@ const Home = () => {
             <Banner />
             <Foodography />
             <Toys />
+            <ChooseUs />
+            <OurBrands/>
         </>
     );
 };

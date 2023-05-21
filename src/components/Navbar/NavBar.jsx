@@ -23,8 +23,13 @@ const NavBar = () => {
     const navItems = <>
         <ActiveLink to='/'>Home</ActiveLink>
         <ActiveLink to='/all-toys'>All Toys</ActiveLink>
-        <ActiveLink to='/my-toys'>My Toys</ActiveLink>
-        <ActiveLink to='/add-toy'>Add Toy</ActiveLink>
+        {user ?
+            <>
+                <ActiveLink to='/my-toys'>My Toys</ActiveLink>
+                <ActiveLink to='/add-toy'>Add Toy</ActiveLink>
+            </>
+            : ""
+        }
         <ActiveLink to='/blog'>Blogs</ActiveLink>
     </>
 

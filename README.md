@@ -33,29 +33,18 @@ You can visit the live website at: [Whisk & Play](https://whiskandplay.web.app/)
 
 1. Clone the repository:
 
-    git clone <https://github.com/Rownokzahan/whisk-and-play>
+        git clone https://github.com/Rownokzahan/whisk-and-play
 
 2. Install the dependencies:
 
-    cd client
-    npm install
-
-    cd ../server
-    npm install
+        cd whisk-and-play
+        npm install
 
 3. Set up environment variables:
 
-    - Create a `.env` file in the `server` directory.
-    - Add the necessary environment variables (e.g., Firebase config keys, MongoDB credentials).
+    - Create a `.env` file in the `main` directory.
+    - Add the necessary environment variables (e.g., Firebase config keys).
 
-4. Start the development server:
-
-    cd client
-    npm start
-
-    cd ../server
-    npm start
-  
-5. Open the application in your browser:
+4. Open the application in your browser:
 
     <http://localhost:3000>

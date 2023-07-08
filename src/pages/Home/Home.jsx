@@ -5,6 +5,7 @@ import Foodography from "./Foodography";
 import OurBrands from "./OurBrands";
 import Reviews from "./Reviews";
 import Toys from "./Toys";
+import Video from "./Video";
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Foodography />
             <Toys />
             <ChooseUs />
+            <Video />
             <OurBrands />
             <Reviews />
         </>

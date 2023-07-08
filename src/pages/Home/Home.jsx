@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import ChooseUs from "./ChooseUs";
 import Foodography from "./Foodography";
 import OurBrands from "./OurBrands";
+import Reviews from "./Reviews";
 import Toys from "./Toys";
 
 const Home = () => {
@@ -15,7 +16,8 @@ const Home = () => {
             <Foodography />
             <Toys />
             <ChooseUs />
-            <OurBrands/>
+            <OurBrands />
+            <Reviews />
         </>
     );
 };
